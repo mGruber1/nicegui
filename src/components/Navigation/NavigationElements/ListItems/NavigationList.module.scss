@@ -1,5 +1,9 @@
 .navigationList {
     & > ul {
+        display: flex;
+        flex-direction: column;
         list-style-type: none;
+        color: white;
+        padding-left: 0px;
     }
 }

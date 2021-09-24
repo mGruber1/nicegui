@@ -1,0 +1,39 @@
+.navigationItem {
+  width: 100%;
+  & > * > * {
+    color: white;
+  }
+
+  & > * > * > span {
+    width: 50%;
+    text-align: center;
+  }
+
+  a {
+    display: flex;
+    justify-content:space-evenly;
+    height: 50px;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease,
+      font-weight 0.2s ease, justify-content 0.5s ease;
+
+      & > div {
+        width: 50%;
+        //border: 1px solid;
+
+        &:nth-child(odd) {
+          width: 20px;
+        }
+      }
+    &:hover {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+
+      & > box-item {
+        background-color: green;
+      }
+    }
+  }
+}

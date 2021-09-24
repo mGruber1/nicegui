@@ -1,12 +1,22 @@
-import Styles from "./NavigationItem.scss";
+import Styles from "./NavigationItem.module.scss";
 import "boxicons";
-
 const NavigationItem = (props) => {
   return (
     <div className={Styles.navigationItem}>
       <li>
-        <box-icon color="white" size="lg" name={props.boxType}></box-icon>
-        <span>MenuItem</span>
+        <a href="#">
+          <div>
+            {" "}
+            <box-icon
+              color="white"
+              type="regular"
+              name={props.boxType}
+            ></box-icon>
+          </div>
+          <div>
+            <span>{props.caption}</span>
+          </div>
+        </a>
       </li>
     </div>
   );

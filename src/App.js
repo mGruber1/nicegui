@@ -1,15 +1,15 @@
-import Wrapper from './components/Wrapper/Wrapper'
-import Navigation from './components/Navigation/Navigation'
-import Content from './components/Content/Content'
+import Wrapper from "./components/Wrapper/Wrapper";
+import Navigation from "./components/Navigation/Navigation";
+import Content from "./components/Content/Content";
 
 function App() {
-  return (
 
+
+  return (
     <Wrapper>
       <Navigation></Navigation>
       <Content></Content>
     </Wrapper>
-
   );
 }
 
