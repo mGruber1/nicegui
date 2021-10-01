@@ -1,9 +1,14 @@
 .navigation {
-  position: fixed;
-  width: 300px;
+  position: relative;
+  width: 0px;
   height: 99%;
   background-color: #152238;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-bottom-right-radius: 10px;
+  transition: width 0.2s ease-in;
+}
+
+.active {
+  width: 300px;
 }

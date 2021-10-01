@@ -1,23 +1,28 @@
 import Styles from "./NavigationItem.module.scss";
+import { HashRouter as Router, Link } from "react-router-dom";
 import "boxicons";
 const NavigationItem = (props) => {
+
   return (
     <div className={Styles.navigationItem}>
+      <Router>
       <li>
-        <a href="#">
+        <Link to={props.url}>
           <div>
             {" "}
             <box-icon
-              color="white"
-              type="regular"
+              color='rgba(255,255,255,0.45)'
+              type="solid"
               name={props.boxType}
             ></box-icon>
           </div>
           <div>
             <span>{props.caption}</span>
           </div>
-        </a>
+        </Link>
       </li>
+      </Router>
+
     </div>
   );
 };
