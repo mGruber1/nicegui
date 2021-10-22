@@ -1,0 +1,13 @@
+.navigationItem {
+    width: 100%;
+    background-color:green;
+        display: flex;
+        align-items: center;
+        border: 1px solid white;
+        align-items: center;
+        justify-content: space-between;
+        
+        & > span {
+            color: white;
+        }
+}
